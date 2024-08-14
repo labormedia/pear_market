@@ -30,7 +30,7 @@ progress
 ## Copy rpc public key to client folder :
 
 ```
-$ echo export default \'RPC_PUBLIC_KEY\' >> ../client/app_id.js
+$ echo export default \'RPC_PUBLIC_KEY\' > ../client/app_id.js
 ```
 
 ## Run an instance of client
