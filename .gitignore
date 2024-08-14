@@ -1,3 +1,9 @@
+# Local db
+db
+
+# Linker data
+client/app_id.js
+
 # Logs
 logs
 *.log
