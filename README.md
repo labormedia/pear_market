@@ -3,10 +3,15 @@ Distributed p2p auction market platform built on PEAR.
 The main purpose of this approach is to provide an isomorphic application for checked shared behavioured based on the versions of the application and the schemas.
 The application shared object can be found in ./server/auctions.js and the schemas in ./server/schemas.js
 
+## Start hyperdht bootstrap instance
+```
+$ hyperdht --bootstrap --host 127.0.0.1 --port 30001
+```
 
 ## Run service
 ```
 $ cd server
+$ npm i
 $ rm ./db
 $ killall pear-runtime
 $ pear dev
@@ -36,6 +41,7 @@ $ echo export default \'RPC_PUBLIC_KEY\' > ../client/app_id.js
 ## Run an instance of client
 ```
 $ cd client
+$ npm i
 $ rm ./db
 $ pear run --dev . --devtools
 ```

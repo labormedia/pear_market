@@ -9,6 +9,8 @@ import crypto from 'hypercore-crypto'
 import app_id from './app_id'
 import Ajv from 'ajv'
 
+console.log('app_id ',app_id ) 
+
 const main = async () => {
   // hyperbee db
   const hcore = new Hypercore('./db/rpc-client')
